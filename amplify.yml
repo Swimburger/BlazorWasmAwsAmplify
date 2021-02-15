@@ -6,8 +6,6 @@ frontend:
         - curl -sSL https://dot.net/v1/dotnet-install.sh > dotnet-install.sh
         - chmod +x *.sh
         - ./dotnet-install.sh -c 5.0 -InstallDir ./dotnet5
-        - export PATH=$PATH:/root/.dotnet:/root/.dotnet/tools
-        - export DOTNET_ROOT="/root/.dotnet"
         - ./dotnet5/dotnet --version
     build:
       commands:
